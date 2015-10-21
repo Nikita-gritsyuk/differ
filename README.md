@@ -8,7 +8,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'differ'
+gem 'redcarpet', :git => 'git://github.com/Nikita-gritsyuk/differ.git'
 ```
 
 And then execute:
@@ -22,16 +22,18 @@ Or install it yourself as:
 ## Usage
 
 Its realy easy:
+```ruby
+differ = Diff.new("file1.txt", "file2.txt")
 
-differ = Diff.new()
-file1,file2 = ["file1.txt", "file2.txt"]
-
-puts differ.set_diff_files(file1,file2)
 puts differ.to_color_log
 puts differ.to_a
 puts differ.json
 
-
+puts differ.set_diff_files(file2,file3)
+puts differ.to_color_log
+puts differ.to_a
+puts differ.json
+```
 
 ## Development
 
