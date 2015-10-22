@@ -24,12 +24,12 @@ differ = Diff.new("file1.txt", "file2.txt")
 
 puts differ.to_color_log
 puts differ.to_a
-puts differ.json
+puts differ.to_json
 
 puts differ.set_diff_files(file2,file3)
 puts differ.to_color_log
 puts differ.to_a
-puts differ.json
+puts differ.to_json
 ```
 
 ## Development
