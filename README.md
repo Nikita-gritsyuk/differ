@@ -8,7 +8,7 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'redcarpet', :git => 'git://github.com/Nikita-gritsyuk/differ.git'
+gem 'differ', :git => 'git://github.com/Nikita-gritsyuk/differ.git'
 ```
 
 And then execute:
